@@ -1,1 +1,31 @@
+version: 1.2
+workflows:
+  - name: HaplotypeCaller_Female
+    subclass: WDL
+    primaryDescriptorPath: /HaplotypeCaller_female.wdl
+    readme: /README.md
 
+  - name: HaplotypeCaller_Male
+    subclass: WDL
+    primaryDescriptorPath: /HaplotypeCaller_male.wdl
+    readme: /README.md
+
+  - name: GenomicsDBImport
+    subclass: WDL
+    primaryDescriptorPath: /GenomicsDBImport.wdl
+    readme: /README.md
+
+  - name: GenotypeGVCFs
+    subclass: WDL
+    primaryDescriptorPath: /GenotypeGVCFs.wdl
+    readme: /README.md
+
+  - name: VariantRecalibrator
+    subclass: WDL
+    primaryDescriptorPath: /VariantRecalibrator.wdl
+    readme: /README.md
+
+  - name: ApplyVQSR
+    subclass: WDL
+    primaryDescriptorPath: /ApplyVQSR.wdl
+    readme: /README.md
